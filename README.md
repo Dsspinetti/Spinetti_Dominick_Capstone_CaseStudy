@@ -7,7 +7,6 @@ Repository for case study project
 event dashboard for music events around the user
 
 golf course management app that breaks down each hole and provides different strategies *Most Likely idea to be chosen
-----------------------------------------------------------------------------------------
 
 online platform for playing with other musicians
 
