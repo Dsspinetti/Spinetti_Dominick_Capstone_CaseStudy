@@ -4,7 +4,7 @@ Repository for case study project
 
 ## Idea for project
 
-golf course management app that breaks down each hole and provides different strategies  
+golf course management app that breaks down each hole and provides different strategies for approaching the course
 
 ## User Stories
 
