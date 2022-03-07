@@ -24,4 +24,4 @@ As a developer, I want store user log in history into my SQL database so that I 
 
 ## Potential logo
 
-(![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
+![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
