@@ -8,7 +8,7 @@ golf course management app that breaks down each hole and provides different str
 
 ## User Stories
 
-###As a < type of user >, I want < some goal > so that < some reason >
+### As a < type of user >, I want < some goal > so that < some reason >
 
 -As a user, I want to create my own account so that I can access the application
   -As a user, I want my password to be unique so that nobody will have the same information as me
