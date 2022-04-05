@@ -1,0 +1,250 @@
+html{
+    font-family:sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+body{
+    margin:0
+}
+header,nav{
+    display:block
+}
+[hidden]{
+    display:none
+}
+a{
+    background-color:transparent
+}
+a:active,a:hover{
+    outline:0
+}
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+@media print{
+    *,:after,:before{
+        color:#000!important;
+        text-shadow:none!important;
+        background:0 0!important;
+        -webkit-box-shadow:none!important;
+        box-shadow:none!important
+    }
+    a,a:visited{
+        text-decoration:underline
+    }
+    a[href]:after{
+        content:" (" attr(href) ")"
+    }
+    a[href^="#"]:after,a[href^="javascript:"]:after{
+        content:""
+    }
+    .navbar{
+        display:none
+    }
+}
+@font-face{
+    font-family:"Glyphicons Halflings";
+    src:url(../fonts/glyphicons-halflings-regular.eot);
+    src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(../fonts/glyphicons-halflings-regular.woff2) format("woff2"),url(../fonts/glyphicons-halflings-regular.woff) format("woff"),url(../fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+}
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+:after,:before{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+html{
+    font-size:10px;
+    -webkit-tap-highlight-color:transparent
+}
+body{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+    line-height:1.42857143;
+    color:#333;
+    background-color:#fff
+}
+a{
+    color:#337ab7;
+    text-decoration:none
+}
+a:focus,a:hover{
+    color:#23527c;
+    text-decoration:underline
+}
+a:focus{
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px
+}
+[role=button]{
+    cursor:pointer
+}
+ul{
+    margin-top:0;
+    margin-bottom:10px
+}
+ul ul{
+    margin-bottom:0
+}
+.container{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+@media (min-width:768px){
+    .container{
+        width:750px
+    }
+}
+@media (min-width:992px){
+    .container{
+        width:970px
+    }
+}
+@media (min-width:1200px){
+    .container{
+        width:1170px
+    }
+}
+.container-fluid{
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+.nav{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+.nav>li{
+    position:relative;
+    display:block
+}
+.nav>li>a{
+    position:relative;
+    display:block;
+    padding:10px 15px
+}
+.nav>li>a:focus,.nav>li>a:hover{
+    text-decoration:none;
+    background-color:#eee
+}
+.navbar{
+    position:relative;
+    min-height:50px;
+    margin-bottom:20px;
+    border:1px solid transparent
+}
+@media (min-width:768px){
+    .navbar{
+        border-radius:4px
+    }
+}
+@media (min-width:768px){
+    .navbar-header{
+        float:left
+    }
+}
+.container-fluid>.navbar-header,.container>.navbar-header{
+    margin-right:-15px;
+    margin-left:-15px
+}
+@media (min-width:768px){
+    .container-fluid>.navbar-header,.container>.navbar-header{
+        margin-right:0;
+        margin-left:0
+    }
+}
+.navbar-brand{
+    float:left;
+    height:50px;
+    padding:15px 15px;
+    font-size:18px;
+    line-height:20px
+}
+.navbar-brand:focus,.navbar-brand:hover{
+    text-decoration:none
+}
+@media (min-width:768px){
+    .navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand{
+        margin-left:-15px
+    }
+}
+.navbar-nav{
+    margin:7.5px -15px
+}
+.navbar-nav>li>a{
+    padding-top:10px;
+    padding-bottom:10px;
+    line-height:20px
+}
+@media (min-width:768px){
+    .navbar-nav{
+        float:left;
+        margin:0
+    }
+    .navbar-nav>li{
+        float:left
+    }
+    .navbar-nav>li>a{
+        padding-top:15px;
+        padding-bottom:15px
+    }
+}
+.navbar-default{
+    background-color:#f8f8f8;
+    border-color:#e7e7e7
+}
+.navbar-default .navbar-brand{
+    color:#777
+}
+.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{
+    color:#5e5e5e;
+    background-color:transparent
+}
+.navbar-default .navbar-nav>li>a{
+    color:#777
+}
+.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{
+    color:#333;
+    background-color:transparent
+}
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{
+    color:#555;
+    background-color:#e7e7e7
+}
+@-webkit-keyframes progress-bar-stripes{
+    from{
+        background-position:40px 0
+    }
+    to{
+        background-position:0 0
+    }
+}
+@-o-keyframes progress-bar-stripes{
+    from{
+        background-position:40px 0
+    }
+    to{
+        background-position:0 0
+    }
+}
+@keyframes progress-bar-stripes{
+    from{
+        background-position:40px 0
+    }
+    to{
+        background-position:0 0
+    }
+}
+.container-fluid:after,.container-fluid:before,.container:after,.container:before,.nav:after,.nav:before,.navbar-header:after,.navbar-header:before,.navbar:after,.navbar:before{
+    display:table;
+    content:" "
+}
+.container-fluid:after,.container:after,.nav:after,.navbar-header:after,.navbar:after{
+    clear:both
+}
