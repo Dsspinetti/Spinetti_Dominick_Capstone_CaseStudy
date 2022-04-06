@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-@Primary
+//@Service
+//@Primary
 public class UserServiceImpl implements UserService {
 
     private UserRepository userRepository;

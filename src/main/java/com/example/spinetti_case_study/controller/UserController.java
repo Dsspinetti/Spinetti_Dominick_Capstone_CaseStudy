@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Controller
@@ -25,19 +27,32 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
-      //Mapping for login page
     @GetMapping("/")
-    public String getAllUsers(Model model) {
+    public String showHomeScreen(Model model) {
+        return "HomeScreen";
+    }
+    //Mapping for login page
+    @GetMapping("/login")
+    public String login() {
         return "Login";
     }
-      //Creating model for account creation
+
+    //Mapping for logout
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest request) {
+        HttpSession httpsession = request.getSession();
+        httpsession.invalidate();
+        return "redirect:/";
+    }
+
+    //Creating model for account creation
     @GetMapping("/showCreateAccount")
     public String showCreateAccount(Model model) {
         User user = new User();
         model.addAttribute("user", user);
         return "CreateAccount";
     }
-     // Saving new user to the database with binding result handling backend form validation
+    // Saving new user to the database with binding result handling backend form validation
     @PostMapping("/saveUser")
     public String saveUser(@ModelAttribute("user") @Valid User user, BindingResult bindingresult) {
 
@@ -46,31 +61,27 @@ public class UserController {
         }
 
         userService.saveUser(user);
-        return "redirect:/";
+        return "redirect:/login";
     }
-     //Mapping for update account
+    //Mapping for update account
     @GetMapping("/showFormForUpdate/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
         User user = userService.getUserById(id);
         model.addAttribute("user", user);
         return "UpdateAccount";
     }
-      //mapping for listing accounts
+    //mapping for listing accounts
     @GetMapping("/listAccounts")
     public String getAllUsersList(Model model) {
         model.addAttribute("listUsers", userService.getAllUsers());
         return "ListAccounts";
     }
-     //Mapping for deleting a user
+    //Mapping for deleting a user
     @GetMapping("deleteUser/{id}")
     public String deleteUser(@PathVariable(value = "id") long id) {
 
         this.userService.deleteUserById(id);
         return "redirect:/listAccounts";
     }
-      //Mapping for main home page
-    @GetMapping("/showHomeScreen")
-    public String showHomeScreen(Model model) {
-        return "HomeScreen";
-    }
+    //Mapping for main home page
 }
