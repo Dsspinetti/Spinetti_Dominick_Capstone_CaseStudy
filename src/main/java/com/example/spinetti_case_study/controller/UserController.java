@@ -27,10 +27,13 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
+
+    //Mapping for main home page
     @GetMapping("/")
     public String showHomeScreen(Model model) {
         return "HomeScreen";
     }
+
     //Mapping for login page
     @GetMapping("/login")
     public String login() {
@@ -52,7 +55,8 @@ public class UserController {
         model.addAttribute("user", user);
         return "CreateAccount";
     }
-    // Saving new user to the database with binding result handling backend form validation
+
+    // Saving new user to the database with binding result handling back-end form validation
     @PostMapping("/saveUser")
     public String saveUser(@ModelAttribute("user") @Valid User user, BindingResult bindingresult) {
 
@@ -63,6 +67,7 @@ public class UserController {
         userService.saveUser(user);
         return "redirect:/login";
     }
+
     //Mapping for update account
     @GetMapping("/showFormForUpdate/{id}")
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
@@ -70,12 +75,14 @@ public class UserController {
         model.addAttribute("user", user);
         return "UpdateAccount";
     }
+
     //mapping for listing accounts
     @GetMapping("/listAccounts")
     public String getAllUsersList(Model model) {
         model.addAttribute("listUsers", userService.getAllUsers());
         return "ListAccounts";
     }
+
     //Mapping for deleting a user
     @GetMapping("deleteUser/{id}")
     public String deleteUser(@PathVariable(value = "id") long id) {
@@ -83,5 +90,9 @@ public class UserController {
         this.userService.deleteUserById(id);
         return "redirect:/listAccounts";
     }
-    //Mapping for main home page
+    //Mapping for Profile page
+    @GetMapping("/profile")
+    public String showProfile(Model model) {
+        return "Profile";
+    }
 }
