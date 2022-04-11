@@ -34,7 +34,7 @@ golf course management app that breaks down each hole and provides different str
 
 ## Development process
 
-####Update for 4/11/22
+###Update for 4/11/22
  - preparing profile page to autofill with user information
  - created userprofile model and its table creation in the database
  - overall percentage of completion estimate for overall project is about 70-80%
