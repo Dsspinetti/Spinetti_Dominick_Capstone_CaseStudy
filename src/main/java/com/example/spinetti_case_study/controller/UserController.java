@@ -31,13 +31,13 @@ public class UserController {
     //Mapping for main home page
     @GetMapping("/")
     public String showHomeScreen(Model model) {
-        return "HomeScreen";
+        return "home_screen";
     }
 
     //Mapping for login page
     @GetMapping("/login")
     public String login() {
-        return "Login";
+        return "login";
     }
 
     //Mapping for logout
@@ -53,7 +53,7 @@ public class UserController {
     public String showCreateAccount(Model model) {
         User user = new User();
         model.addAttribute("user", user);
-        return "CreateAccount";
+        return "create_account";
     }
 
     // Saving new user to the database with binding result handling back-end form validation
@@ -61,7 +61,7 @@ public class UserController {
     public String saveUser(@ModelAttribute("user") @Valid User user, BindingResult bindingresult) {
 
         if (bindingresult.hasErrors()) {
-            return "CreateAccount";
+            return "create_account";
         }
 
         userService.saveUser(user);
@@ -73,14 +73,14 @@ public class UserController {
     public String showFormForUpdate(@PathVariable(value = "id") long id, Model model) {
         User user = userService.getUserById(id);
         model.addAttribute("user", user);
-        return "UpdateAccount";
+        return "update_account";
     }
 
     //mapping for listing accounts
     @GetMapping("/listAccounts")
     public String getAllUsersList(Model model) {
         model.addAttribute("listUsers", userService.getAllUsers());
-        return "ListAccounts";
+        return "list_accounts";
     }
 
     //Mapping for deleting a user
@@ -94,6 +94,18 @@ public class UserController {
     //Mapping for Profile page
     @GetMapping("/profile")
     public String showProfile(Model model) {
-        return "Profile";
+        return "profile";
+    }
+
+    //Mapping for Report a bug page
+    @GetMapping("/reportBug")
+    public String showReportBug(Model model) {
+        return "report_bug";
+    }
+
+    //Mapping for FAQ page
+    @GetMapping("/faq")
+    public String showFAQ(Model model) {
+        return "faq";
     }
 }
