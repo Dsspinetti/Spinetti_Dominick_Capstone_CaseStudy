@@ -90,6 +90,7 @@ public class UserController {
         this.userService.deleteUserById(id);
         return "redirect:/listAccounts";
     }
+
     //Mapping for Profile page
     @GetMapping("/profile")
     public String showProfile(Model model) {

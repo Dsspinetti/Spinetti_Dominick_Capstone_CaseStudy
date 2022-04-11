@@ -20,6 +20,4 @@ public class SpinettiDominickCaseStudyApplication {
 	public UserService userService(UserRepository userRepository) {
 		return new UserServiceImpl(userRepository);
 	}
-
-
 }
