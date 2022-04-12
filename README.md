@@ -41,3 +41,8 @@ golf course management app that breaks down each hole and provides different str
  - Unable to complete profile autofill until I can implement account creation and login. Unable to do so with base user login as of right now.
  - Changed all HTML files to snake case and created HTML files/GetMapping for Report a bug and Frequently asked questions. Also had to add new views to the navbar on each page that uses it.
  - Going to start with creating the database and tables for FAQ and Report a bug.
+
+#### Update for 4/12/22
+ - Creating the database and tables for Report a bug.
+ - Running into issues with creating a second controller. I believe the main problem has to do with spring security causing issues.
+ - going to try moving back to an older git version of the project and starting report a bug from scratch.
