@@ -5,6 +5,7 @@ import com.example.spinetti_case_study.services.UserService;
 import com.example.spinetti_case_study.services.UserServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
