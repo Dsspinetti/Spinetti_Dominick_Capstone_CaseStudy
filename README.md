@@ -43,6 +43,7 @@ golf course management app that breaks down each hole and provides different str
  - Going to start with creating the database and tables for FAQ and Report a bug.
 
 #### Update for 4/12/22
+ - Overall percentage of completion is still around 70-80%
  - Creating the database and tables for Report a bug.
  - Running into issues with creating a second controller. I believe the main problem has to do with spring security causing issues.
  - going to try moving back to an older git version of the project and starting report a bug from scratch.
