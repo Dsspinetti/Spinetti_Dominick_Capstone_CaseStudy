@@ -51,4 +51,4 @@ golf course management app that breaks down each hole and provides different str
 #### Update for 4/13/22 
  - Overall percentage of completion has grown to 75-80%
  - Successfully implemented CRUD operations for Report a bug
- - The change that fixed the issue was adding @Service to the ReportBugServiceImpl which resolved the IllegalStatement error
+ - The change that fixed the issue was adding @Service to the ReportBugServiceImpl which resolved the IllegalStatement error as well as creating a new instance of reportbug in the controller and adding its attribute
