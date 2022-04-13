@@ -1,21 +1,23 @@
 package com.example.spinetti_case_study.models;
 
 
+import javax.validation.constraints.NotNull;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "REPORT_BUG")
 public class ReportBug {
-    //add id and columns for report a bug with the database and the table with hibernate
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    @NotNull
     @Column(name = "TITLE")
     private String title;
 
+    @NotNull
     @Column(name = "DESCRIPTION")
     private String description;
 

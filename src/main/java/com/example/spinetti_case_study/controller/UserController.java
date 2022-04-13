@@ -20,6 +20,7 @@ public class UserController {
 
     private UserService userService;
 
+
     public UserController() {
     }
 
@@ -27,6 +28,7 @@ public class UserController {
     public UserController(UserService userService) {
         this.userService = userService;
     }
+
 
     //Mapping for main home page
     @GetMapping("/")
@@ -97,11 +99,10 @@ public class UserController {
         return "profile";
     }
 
-    //Mapping for Report a bug page
-    @GetMapping("/reportBug")
-    public String showReportBug(Model model) {
-        return "report_bug";
-    }
+
+
+
+
 
     //Mapping for FAQ page
     @GetMapping("/faq")

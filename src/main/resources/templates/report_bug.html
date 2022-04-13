@@ -47,14 +47,17 @@
     <div class="row">
         <div class="col-md-12">
             <h1>Report a Bug</h1>
-            <form action="reportBug" method="post">
+            <form th:action="@{/saveBugReport}" th:object="${reportBug}" method="POST">
                 <div class="form-group">
                     <label for="bugTitle">Bug Title (Brief label of what happened)</label>
-                    <input type="text" class="form-control" id="bugTitle" name="bugTitle" placeholder="Enter bug title">
+                    <input type="text" th:field="*{title}" class="form-control" id="bugTitle" name="bugTitle"
+                           placeholder="Enter bug title">
+                    <div th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Name Error</div>
                 </div>
                 <div class="form-group">
                     <label for="bugDescription">Bug Description (What were you doing when this happened)</label>
-                    <textarea class="form-control" id="bugDescription" name="bugDescription" rows="3"
+                    <textarea class="form-control" th:field="*{description}" id="bugDescription" name="bugDescription"
+                              rows="3"
                               placeholder="Enter bug description"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-sm mb-3">Submit</button>
