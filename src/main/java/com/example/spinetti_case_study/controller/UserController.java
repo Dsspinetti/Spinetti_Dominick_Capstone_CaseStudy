@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.security.Principal;
 
 @Controller
 public class UserController {
@@ -95,7 +96,14 @@ public class UserController {
 
     //Mapping for Profile page
     @GetMapping("/profile")
-    public String showProfile(Model model) {
+    public String showProfile(Principal principal, Model model) {
+
+        User user =
+                userService.findByEmail(principal.getName());
+                model.addAttribute("userName", user.getUserName());
+                model.addAttribute("firstName", user.getFirstName());
+                model.addAttribute("lastName", user.getLastName());
+                model.addAttribute("email", user.getEmail());
         return "profile";
     }
 

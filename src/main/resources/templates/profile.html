@@ -57,14 +57,14 @@
         </div>
     </div>
     <div class="px-5">
-        <form>
+        <form th:action="@{/registration}" th:object="${user}" th:id="form">
             <div class="row">
                 <div class="col">
-                    <label for="username">Display Name: </label>
+                    <label for="username">Display Name: <span th:text="${userName}"></span></label>
                     <input type="text" id="userName" class="form-control" placeholder="UserName">
                 </div>
                 <div class="col">
-                    <label for="name">Full Name: </label>
+                    <label for="name">Full Name: <span th:text="${firstName}"></span> <span th:text="${lastName}"></span></label>
                     <input type="text" id="name" class="form-control" placeholder="Full name">
                 </div>
             </div>
@@ -72,7 +72,8 @@
 
             <div class="row">
                 <div class="col">
-                    <label for="email">Email Address: </label>
+                    <label for="email">Email Address: <span th:text="${email}"></span></label>
+
                     <input type="text" id="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col">

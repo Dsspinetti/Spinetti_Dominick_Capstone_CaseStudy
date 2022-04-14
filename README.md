@@ -2,6 +2,8 @@
 
 Repository for case study project
 
+link to GitHub repo: https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy
+
 ## Idea for project
 
 golf course management app that breaks down each hole and provides different strategies for approaching the course. Each course will have photos of each hole and how to prepare.
@@ -58,4 +60,5 @@ password: password
 #### Update for 4/14/22
  - Overall percentage of completion is now around 80%
  - Successfully implemented user registration and login. A new user is now able to create their own account from the create account page and log in with their new credentials as well.
+ - Added feature to profile page where users information automatically populates on entry
  - No major impediments came with this implementation.
