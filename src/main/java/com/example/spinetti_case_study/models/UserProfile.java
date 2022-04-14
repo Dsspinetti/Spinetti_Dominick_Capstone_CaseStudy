@@ -35,17 +35,6 @@ public class UserProfile {
     private String description;
 
     public UserProfile() {
-        //insert dummy values into each method
-        this.displayName = "Jd2234";
-        this.fullName = "John Doe";
-        this.email = "djogn@company.com";
-        this.phoneNumber = "(123) 456-7890";
-        this.handicap = 0;
-        this.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit," +
-                " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." +
-                " Ut enim ad minim veniam," +
-                " quis nostrud exercitation ullamco" +
-                " laboris nisi ut aliquip ex ea commodo consequat.";
     }
 
     public long getId() {
