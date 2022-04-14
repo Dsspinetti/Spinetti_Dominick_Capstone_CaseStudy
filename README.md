@@ -31,7 +31,9 @@ golf course management app that breaks down each hole and provides different str
 
 ![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
 
-
+admin login is 
+username: dspinetti@company.com 
+password: password
 ## Development process
 
 #### Update for 4/11/22
@@ -52,3 +54,8 @@ golf course management app that breaks down each hole and provides different str
  - Overall percentage of completion has grown to 75-80%
  - Successfully implemented CRUD operations for Report a bug
  - The change that fixed the issue was adding @Service to the ReportBugServiceImpl which resolved the IllegalStatement error as well as creating a new instance of reportbug in the controller and adding its attribute
+
+#### Update for 4/14/22
+ - Overall percentage of completion is now around 80%
+ - Successfully implemented user registration and login. A new user is now able to create their own account from the create account page and log in with their new credentials as well.
+ - No major impediments came with this implementation.

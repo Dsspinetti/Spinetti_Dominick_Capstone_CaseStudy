@@ -65,6 +65,7 @@
                     name="username"
                     id="username"
                     class="form-control"
+                    autofocus="autofocus"
                     placeholder="Enter your user name"
                     required
             />
@@ -83,13 +84,13 @@
 
 
         <div class="form-group">
-            <button type="submit" id="submit" class="submit-button" value="Sign In">
+            <button type="submit" id="login-submit" class="submit-button" value="Sign In">
                 Log in
             </button>
         </div>
     </form>
     <p class="text-center">
-        <a th:href="@{/showCreateAccount}">
+        <a th:href="@{/registration}">
             New User? Create Account here</a>
     </p>
     <p class="text-center">
