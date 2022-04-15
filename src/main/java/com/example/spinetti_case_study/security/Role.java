@@ -1,4 +1,4 @@
-package com.example.spinetti_case_study.models;
+package com.example.spinetti_case_study.security;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

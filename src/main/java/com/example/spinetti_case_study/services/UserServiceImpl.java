@@ -1,11 +1,10 @@
 package com.example.spinetti_case_study.services;
 
 
-import com.example.spinetti_case_study.models.Role;
+import com.example.spinetti_case_study.security.Role;
 import com.example.spinetti_case_study.models.User;
 import com.example.spinetti_case_study.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

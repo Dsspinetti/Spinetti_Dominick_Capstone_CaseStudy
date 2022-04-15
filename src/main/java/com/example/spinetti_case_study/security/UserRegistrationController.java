@@ -1,4 +1,4 @@
-package com.example.spinetti_case_study.controller;
+package com.example.spinetti_case_study.security;
 
 import com.example.spinetti_case_study.models.User;
 import com.example.spinetti_case_study.services.UserRegistrationDto;

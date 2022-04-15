@@ -62,3 +62,8 @@ password: password
  - Successfully implemented user registration and login. A new user is now able to create their own account from the create account page and log in with their new credentials as well.
  - Added feature to profile page where users information automatically populates on entry
  - No major impediments came with this implementation.
+
+#### Update for 4/15/22
+ - Overall percentage of completion is still hovering around 80%
+ - I would like to start working towards displaying a page for the courses after a user selects one on the home page as well as implementing crud operation for the FAQ page
+ - Created table and Crud operations for FAQ page. Working on implementing a method for creating a new question and having it display on the FAQ page.

@@ -1,6 +1,8 @@
 package com.example.spinetti_case_study.models;
 
 
+import com.example.spinetti_case_study.security.Role;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

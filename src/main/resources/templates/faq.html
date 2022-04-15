@@ -9,7 +9,7 @@
 
 
     <style>
-            @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 body {
 font-family: 'Poppins', sans-serif;
 font-size: 1rem;
@@ -18,6 +18,8 @@ line-height: 1.4;
 color: var(--color-white);
 margin: 0;
 }
+
+
     </style>
 </head>
 
@@ -62,7 +64,7 @@ margin: 0;
                 <div class="card-body">
                     <h5 class="card-title fw-bold">What is Golf Manager?</h5>
                     <p class="card-text">Golf Manager is a web application that allows users to improve their
-                    golf game by analyzing courses and recommended strategies before playing.
+                        golf game by analyzing courses and recommended strategies before playing.
                     </p>
                 </div>
             </div>
@@ -71,7 +73,8 @@ margin: 0;
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I create a new account?</h5>
-                    <p class="card-text">To add a new account, click on the "Log In" tab and click on the "Create an account link"
+                    <p class="card-text">To add a new account, click on the "Log In" tab and click on the "Create an
+                        account link"
                         button.
                         Fill out the form and click "Submit".
                     </p>
@@ -82,7 +85,8 @@ margin: 0;
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I add a new course?</h5>
-                    <p class="card-text">To add a new course, click on the "Home" tab and click on the "Recommend new Course"
+                    <p class="card-text">To add a new course, click on the "Home" tab and click on the "Recommend new
+                        Course"
                         button near the bottom of the page.
                         Fill out the form and click "Submit".
                     </p>
@@ -95,7 +99,8 @@ margin: 0;
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I add a new suggestion to a course?</h5>
-                    <p class="card-text">To add a new recommendation, click on the course you have a recommendation for and on the "Add Recommendation"
+                    <p class="card-text">To add a new recommendation, click on the course you have a recommendation for
+                        and on the "Add Recommendation"
                         button.
                         Fill out the form and click "Submit".
                     </p>
@@ -106,18 +111,30 @@ margin: 0;
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I edit my account?</h5>
-                    <p class="card-text">To edit your account, click on the "Profile" tab and fill out any information you want to change
-                         then click the "Update Information" button.
+                    <p class="card-text">To edit your account, click on the "Profile" tab and fill out any information
+                        you want to change
+                        then click the "Update Information" button.
                     </p>
+                </div>
+            </div>
+        </div>
+        <!--        Create a new card by taking information from the FAQ model database-->
+        <div th:each="faq : ${listFaqs}" class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" th:text="${faq.title}"></h5>
+                    <p class="card-text" th:text="${faq.description}"></p>
                 </div>
             </div>
         </div>
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-                crossorigin="anonymous"></script>
-
-
+        <a th:href="@{/showNewFAQ}" class="btn btn-primary btn-sm mb-3"> Add New Question </a>
+    </div>
+</div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </html>

@@ -107,14 +107,4 @@ public class UserController {
         return "profile";
     }
 
-
-
-
-
-
-    //Mapping for FAQ page
-    @GetMapping("/faq")
-    public String showFAQ(Model model) {
-        return "faq";
-    }
 }
