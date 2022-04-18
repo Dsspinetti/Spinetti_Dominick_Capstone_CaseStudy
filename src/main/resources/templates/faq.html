@@ -20,6 +20,10 @@ margin: 0;
 }
 
 
+
+
+
+
     </style>
 </head>
 
@@ -118,12 +122,15 @@ margin: 0;
                 </div>
             </div>
         </div>
-        <!--        Create a new card by taking information from the FAQ model database-->
-        <div th:each="faq : ${listFaqs}" class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold" th:text="${faq.title}"></h5>
-                    <p class="card-text" th:text="${faq.description}"></p>
+        <!--        Create a new card by taking information from the FAQ model database    -->
+
+            <div th:each="faq : ${listFaqs}" class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" th:text="${faq.title}">
+                        </h5>
+                        <p class="card-text" th:text="${faq.description}">
+                        </p>
                 </div>
             </div>
         </div>
