@@ -8,9 +8,9 @@ link to GitHub repo: https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_Ca
 
 golf course management app that breaks down each hole and provides different strategies for approaching the course. Each course will have photos of each hole and how to prepare.
 
- - [User Stories] (#User-Stories)
- - [Development Process] (#Development-process)
- - [Potential Logo] (#Potential-logo)
+ - [User Stories] (#user-stories)
+ - [Development Process] (#development-process)
+ - [Potential Logo] (#potential-logo)
 
 ## User Stories
 
