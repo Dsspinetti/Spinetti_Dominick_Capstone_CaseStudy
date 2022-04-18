@@ -37,10 +37,12 @@ golf course management app that breaks down each hole and provides different str
 
 ![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
 
-admin login is 
-username: dspinetti@company.com 
-password: password
+
 ## Development process
+
+admin login is
+username: dspinetti@company.com
+password: password
 
 #### Update for 4/11/22
  - preparing profile page to autofill with user information
