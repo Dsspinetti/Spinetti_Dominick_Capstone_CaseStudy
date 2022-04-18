@@ -94,7 +94,9 @@ password: password
  - Created table and Crud operations for FAQ page. Working on implementing a method for creating a new question and having it display on the FAQ page.
 
 #### Update for 4/18/22 (85%)
- -I was able to successfully implement the add Question feature for the FAQ page so that an admin can add a new question, and it will display on the main page.
+ - I was able to successfully implement the add Question feature for the FAQ page so that an admin can add a new question, and it will display on the main page.
+ - With this information, I can now implement the same functionality into the course page
+
 
 
 ## Technical Challenges
