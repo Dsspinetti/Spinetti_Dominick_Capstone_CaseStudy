@@ -64,7 +64,7 @@ margin: 0;
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">What is Golf Manager?</h5>
@@ -74,7 +74,7 @@ margin: 0;
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I create a new account?</h5>
@@ -86,7 +86,7 @@ margin: 0;
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I add a new course?</h5>
@@ -100,7 +100,7 @@ margin: 0;
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I add a new suggestion to a course?</h5>
@@ -112,7 +112,7 @@ margin: 0;
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold">How do I edit my account?</h5>
@@ -125,7 +125,7 @@ margin: 0;
         </div>
         <!--        Create a new card by taking information from the FAQ model database    -->
 
-        <div th:each="faq : ${listFaqs}" class="col-sm-4">
+        <div th:each="faq : ${listFaqs}" class="col-sm-4 g-3">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title fw-bold" th:text="${faq.title}">
@@ -137,7 +137,7 @@ margin: 0;
         </div>
 
 
-        <a th:href="@{/showNewFAQ}" class="btn btn-primary btn-sm mb-3"> Add New Question </a>
+        <a th:href="@{/showNewFAQ}" class="btn btn-primary btn-sm mb-3 g-3"> Add New Question </a>
 
     </div>
 </div>

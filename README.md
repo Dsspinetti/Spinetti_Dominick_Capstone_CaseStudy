@@ -97,6 +97,11 @@ password: password
  - I was able to successfully implement the add Question feature for the FAQ page so that an admin can add a new question, and it will display on the main page.
  - With this information, I can now implement the same functionality into the course page
 
+#### Update for 4/19/22 (%)
+ - Planning on spending most of the day creating the course model and a few functionalities that come with it.
+ - had a lot of discussion with a few classmates about the best approach to creating a course model and its relationship with the course strategy table. There is definitely a lot of work to be done and a technical challenge of allowing user to upload an image will be difficult.
+ - So far, I have successfully implemented new course creation on the home page. Still working on image upload.
+
 
 
 ## Technical Challenges
@@ -104,4 +109,4 @@ password: password
  - The first challenge that arose successfully implementing CRUD operations for the USER, FAQ, and REPORT A BUG tables. After talking with fellow learners and reviewing my code these challenges were resolved.
  - The second challenge that arose was the issue with the spring security. The original page with default user, admin, and super-admin gave no difficulty but implementing user registration added a few difficult hurdles to overcome due to changes needing to be made to the UserService and UserServiceImpl.
  - Had a lot of trouble adding functionality for adding a new question to the FAQ database and having it display on the FAQ page. (The solution was very simple...I had the model.addAttribute in the wrong mapping)
- - 
+ - Not sure which method of taking an uploaded photo from a user and storing it into the database will work best.

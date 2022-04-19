@@ -1,6 +1,8 @@
 package com.example.spinetti_case_study.controller;
 
+import com.example.spinetti_case_study.models.Course;
 import com.example.spinetti_case_study.models.User;
+import com.example.spinetti_case_study.services.CourseService;
 import com.example.spinetti_case_study.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,20 +22,24 @@ import java.security.Principal;
 public class UserController {
 
     private UserService userService;
+    private CourseService courseService;
 
 
     public UserController() {
     }
 
     @Autowired
-    public UserController(UserService userService) {
+    public UserController(UserService userService, CourseService courseService) {
         this.userService = userService;
+        this.courseService = courseService;
     }
 
 
     //Mapping for main home page
     @GetMapping("/")
     public String showHomeScreen(Model model) {
+        Course course = new Course();
+        model.addAttribute("listCourses", courseService.getAllCourses());
         return "home_screen";
     }
 
