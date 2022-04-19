@@ -61,9 +61,13 @@ margin: 0;
 
         <div class="form-group">
             <label for="course_description">Course Description:</label>
-            <input type="text" th:field="*{courseDescription}" class="form-control" id="course_description" name="course_description" placeholder="Enter Course Description">
+            <textarea type="text" th:field="*{courseDescription}" class="form-control" id="course_description"
+                      rows="3"
+                      name="course_description" placeholder="Enter Course Description">
+                </textarea>
         </div>
 
+<!--        TODO: add the ability to upload a photo with the new course-->
         <div class="form-group">
             <label for="course_file">Course Photo:</label>
             <input type="file" class="form-control" id="course_file" name="course_file" placeholder="Enter Course File">

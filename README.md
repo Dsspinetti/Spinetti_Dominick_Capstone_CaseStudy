@@ -101,6 +101,8 @@ password: password
  - Planning on spending most of the day creating the course model and a few functionalities that come with it.
  - had a lot of discussion with a few classmates about the best approach to creating a course model and its relationship with the course strategy table. There is definitely a lot of work to be done and a technical challenge of allowing user to upload an image will be difficult.
  - So far, I have successfully implemented new course creation on the home page. Still working on image upload.
+ - Going to start implementing course strategy page/table and its relationship with the course table now. 
+ - Thinking of shifting this card-to-course page relationship to utilize a different method similar to how the update customer works on our my-first-fullstack app. 
 
 
 

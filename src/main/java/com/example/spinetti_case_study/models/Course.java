@@ -1,7 +1,10 @@
 package com.example.spinetti_case_study.models;
 
 
+import com.example.spinetti_case_study.security.Role;
+
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "course")
@@ -19,6 +22,15 @@ public class Course {
 
     @Column(name = "course_image")
     private String courseImage;
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "course_list",
+            joinColumns = @JoinColumn(
+                    name = "course_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(
+                    name = "strategy_id", referencedColumnName = "id"))
+    private Collection<CourseStrategy> courseStrategies;
 
     public Course() {
     }
