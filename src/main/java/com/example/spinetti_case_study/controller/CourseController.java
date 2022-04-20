@@ -20,8 +20,16 @@ public class CourseController {
         this.courseService = courseService;
     }
 
+    @GetMapping("/showCourse")
+    public String showCourse(Model model) {
+        Course course = new Course();
+        model.addAttribute("course", course);
+        return "course";
+    }
+
     @GetMapping("/showNewCourseForm")
     public String showNewCourseForm(Model model) {
+
         Course course = new Course();
         model.addAttribute("course", course);
         return "new_course_form";
