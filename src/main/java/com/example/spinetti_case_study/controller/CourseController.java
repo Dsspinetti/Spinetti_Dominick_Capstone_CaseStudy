@@ -30,7 +30,6 @@ public class CourseController {
 
     @GetMapping("/showNewCourseForm")
     public String showNewCourseForm(Model model) {
-
         Course course = new Course();
         model.addAttribute("course", course);
         return "new_course_form";
