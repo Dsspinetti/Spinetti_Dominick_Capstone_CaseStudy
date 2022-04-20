@@ -4,6 +4,7 @@ package com.example.spinetti_case_study.models;
 import com.example.spinetti_case_study.security.Role;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.Collection;
 
 @Entity
@@ -12,11 +13,12 @@ public class Course {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(name = "course_name")
     private String courseName;
 
+    @Size(min = 2, max = 1000000)
     @Column(name = "course_description")
     private String courseDescription;
 
@@ -35,7 +37,7 @@ public class Course {
     public Course() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

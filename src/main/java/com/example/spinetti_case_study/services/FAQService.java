@@ -13,4 +13,6 @@ public interface FAQService {
     FAQ getQuestionById(long id);
 
     void deleteQuestionById(long id);
+
+    FAQ getQuestionByTitle(String title);
 }

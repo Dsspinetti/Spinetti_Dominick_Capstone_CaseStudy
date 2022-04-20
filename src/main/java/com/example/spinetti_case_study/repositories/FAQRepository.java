@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface FAQRepository extends JpaRepository<FAQ, Long> {
     FAQ findFAQById(Long FAQId);
+
+    FAQ findQuestionByTitle(String title);
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class FAQServiceImpl implements FAQService {
@@ -31,11 +32,22 @@ public class FAQServiceImpl implements FAQService {
 
     @Override
     public FAQ getQuestionById(long id) {
-        FAQ faq = faqRepository.getById(id);
-        if (faq == null) {
-            throw new QuestionNotFoundException();
+        Optional<FAQ> optionalFAQ = faqRepository.findById(id);
+        if (optionalFAQ.isPresent()) {
+            FAQ faq = optionalFAQ.get();
+            return faq;
         }
-        return faq;
+        throw new QuestionNotFoundException();
+
+    }
+    @Override
+    public FAQ getQuestionByTitle(String title) {
+        FAQ faq = faqRepository.findQuestionByTitle(title);
+        if (faq != null) {
+            return faq;
+        }
+        throw new QuestionNotFoundException();
+
     }
 
     @Override

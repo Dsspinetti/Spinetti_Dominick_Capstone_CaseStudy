@@ -107,6 +107,10 @@ password: password
 
 #### Update for 4/20/22 (85%)
  - Added mapping for the course page so that when a new course is added on the home screen the course is now a clickable link that will take them to the strategy page.
+ - Added wireframe PDF and table schema photo to root directory. 
+ - Going to start working on testing as most requirements are already fulfilled for app layout I would like to start preparing the project for submission before polishing up other operations. 
+ - Successfully implemented tests for CourseRepository, FAQRepository, and ReportBugRepository.
+ - Added more test classes for repositories and added delete mapping for course and faq pages.
 
 
 

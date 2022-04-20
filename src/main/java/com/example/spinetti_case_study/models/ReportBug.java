@@ -11,7 +11,7 @@ public class ReportBug {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @NotNull
     @Column(name = "TITLE")
@@ -24,7 +24,7 @@ public class ReportBug {
     public ReportBug() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

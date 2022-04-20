@@ -127,6 +127,9 @@ margin: 0;
 
         <div th:each="faq : ${listFaqs}" class="col-sm-4 g-3">
             <div class="card">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a th:href="@{/deleteQuestion/{id}(id=${faq.id})}"  class="btn btn-close" type="button"></a>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title fw-bold" th:text="${faq.title}">
                     </h5>

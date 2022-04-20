@@ -10,7 +10,7 @@ public class FAQ {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @NotNull
     @Column(name = "QUESTION_TITLE")
@@ -23,7 +23,7 @@ public class FAQ {
     public FAQ() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -46,6 +46,7 @@ public class FAQ {
     public void setDescription(String description) {
         this.description = description;
     }
+
 
 
 }

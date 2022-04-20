@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ReportBugRepository extends JpaRepository<ReportBug, Long> {
     ReportBug findReportBugById(Long bugId);
+
+    ReportBug findReportBugByTitle(String title);
 }
