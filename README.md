@@ -113,6 +113,9 @@ password: password
  - Added more test classes for repositories and added delete mapping for course and faq pages.
  - Created the rest of the testing classes for Impl classes.
 
+#### Update for 4/21/22 (85%)
+ - Going to start working on image upload for creation of a new course. 
+
 
 
 ## Technical Challenges
