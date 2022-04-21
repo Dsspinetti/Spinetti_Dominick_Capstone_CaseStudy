@@ -43,7 +43,7 @@ While this has not been implemented yet, the end goal is to allow each user to a
 
 ![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
 
-##Technical Architecture
+## Technical Architecture
 
  - Technologies used
    - Java

@@ -8,6 +8,7 @@ class SpinettiDominickCaseStudyApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
