@@ -4,7 +4,7 @@ Repository for case study project
 
 link to GitHub repository: https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy
 
-link to rubric completion checklist: https://docs.google.com/document/d/179mEQMDMxmNYVaAxFVI0MCFZZD5136gTeXxZk4KPjJs/edit
+link to rubric completion checklist (Contact Sang Shin to access this document) : https://docs.google.com/document/d/179mEQMDMxmNYVaAxFVI0MCFZZD5136gTeXxZk4KPjJs/edit
 
 ## Idea for project
 
@@ -119,6 +119,10 @@ password: password
  - Going to start working on image upload for creation of a new course. 
  - Have a very rudimentary system for uploading files, but it needs a lot of work. In its current state, the user has to specify the file path when creating a new course for it to display the image. 
  - Been looking into other methods to likely replace my current photo storage method.
+
+#### Update for 4/22/22 (90-95%)
+ - I have abandoned the file upload strategy and am just having the user submit a link to the photo of the course from the golf pass website. This method is working fine.
+ - As turn in date is approaching, I am going to start working on polishing for the final project submission.
 
 
 
