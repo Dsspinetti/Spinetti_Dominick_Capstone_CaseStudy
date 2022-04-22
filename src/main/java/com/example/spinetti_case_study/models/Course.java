@@ -22,6 +22,7 @@ public class Course {
     @Column(name = "course_description")
     private String courseDescription;
 
+    @Size(min = 2, max = 1000000)
     @Column(name = "course_image")
     private String courseImage;
 
