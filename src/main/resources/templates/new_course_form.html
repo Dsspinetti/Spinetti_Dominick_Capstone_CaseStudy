@@ -70,10 +70,14 @@ margin: 0;
 <!--        TODO: add the ability to upload a photo with the new course-->
         <div class="form-group">
             <label for="course_file">Course Photo:</label>
-            <input type="file" class="form-control" id="course_file" name="course_file" placeholder="Enter Course File">
+            <input type="text" th:field="*{courseImage}" class="form-control" id="course_file" name="course_file" placeholder="Enter EXACT name of uploaded file ex: golf-course.PNG">
         </div>
         <button type="submit" class="btn btn-default">Submit</button>
     </form>
+    <p class="text-center">
+        <a th:href="@{/showFileUploadForm}">
+            Upload files here </a>
+    </p>
 </div>
 
 </body>

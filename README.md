@@ -115,6 +115,8 @@ password: password
 
 #### Update for 4/21/22 (85%)
  - Going to start working on image upload for creation of a new course. 
+ - Have a very rudimentary system for uploading files, but it needs a lot of work. In its current state, the user has to specify the file path when creating a new course for it to display the image. 
+ - Been looking into other methods to likely replace my current photo storage method.
 
 
 
