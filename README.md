@@ -4,6 +4,8 @@ Repository for case study project
 
 link to GitHub repository: https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy
 
+link to rubric completion checklist: https://docs.google.com/document/d/179mEQMDMxmNYVaAxFVI0MCFZZD5136gTeXxZk4KPjJs/edit
+
 ## Idea for project
 
 Golf course management app that breaks down each hole and provides different strategies for approaching the course. Each course will have photos of each hole and how to prepare.
