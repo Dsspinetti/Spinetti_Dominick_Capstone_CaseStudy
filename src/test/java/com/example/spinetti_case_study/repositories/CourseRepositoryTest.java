@@ -15,10 +15,15 @@ class CourseRepositoryTest {
     private CourseRepository courseRepository;
 
     @Test
-    void findCourseById_should_return_Course_given_valid_id() {
-        //Test should fail for now as the database is empty
+    void findCourseById_should_return_course_given_valid_id() {
+
         Course course = courseRepository.findCourseById(1L);
         Assertions.assertThat(course).isNotNull();
     }
 
+    @Test
+    void searchByName_should_return_course_given_valid_keyword() {
+        //TODO: implement test for searchByName
+
+    }
 }

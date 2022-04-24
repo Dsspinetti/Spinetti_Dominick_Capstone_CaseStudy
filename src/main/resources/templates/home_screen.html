@@ -85,6 +85,7 @@ margin: 0;
 </nav>
 
 <!-- Declaration for search bar-->
+
 <!--<form action="" autocomplete="off" class="navbar-form" method="post" accept-charset="utf-8">-->
 <!--    <div class="input-group col-lg-12">-->
 <!--        <input name="searchtext" style="width:100%" value="" class="form-control" type="text"-->
@@ -98,13 +99,12 @@ margin: 0;
 <!--</form>-->
 
 <form class="navbar-form" th:action="@{/}">
-    Filter Results:
     <div class="input-group col-lg-12">
-    <input type="text" name="keyword" id="keyword" style="width:100%" th:value="${keyword}" placeholder="Search for your favorite course" required />
+    <input type="text" name="keyword" id="keyword" style="width:100%" class="form-control" th:value="${keyword}" placeholder="Search for your favorite course" required />
     &nbsp;
-    <input type="submit" class="btn btn-primary" value="Search" />
+    <input type="submit" class="btn-sm btn-primary" value="Search" />
     &nbsp;
-    <input type="button" class="btn btn-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
+    <input type="button" class="btn-sm btn-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
     </div>
 </form>
 <!--      declaration for the course cards-->

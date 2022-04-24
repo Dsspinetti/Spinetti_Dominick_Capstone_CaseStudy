@@ -126,6 +126,7 @@ password: password
 
 #### Update for 4/23/22 (90-95%)
  - Implemented search bar functionality for the home page.
+ -  Still need to implement testing class for this custom query
 
 
 
