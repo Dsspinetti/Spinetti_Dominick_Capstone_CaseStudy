@@ -124,6 +124,9 @@ password: password
  - I have abandoned the file upload strategy and am just having the user submit a link to the photo of the course from the golf pass website. This method is working fine.
  - As turn in date is approaching, I am going to start working on polishing for the final project submission.
 
+#### Update for 4/23/22 (90-95%)
+ - Implemented search bar functionality for the home page.
+
 
 
 ## Technical Challenges

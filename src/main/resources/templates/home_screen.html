@@ -85,15 +85,26 @@ margin: 0;
 </nav>
 
 <!-- Declaration for search bar-->
-<form action="" autocomplete="off" class="navbar-form" method="post" accept-charset="utf-8">
+<!--<form action="" autocomplete="off" class="navbar-form" method="post" accept-charset="utf-8">-->
+<!--    <div class="input-group col-lg-12">-->
+<!--        <input name="searchtext" style="width:100%" value="" class="form-control" type="text"-->
+<!--               placeholder="Search for your favorite course">-->
+<!--        <span class="input-group-btn">-->
+<!--                           <button class="btn btn-default" type="submit" id="addressSearch">-->
+<!--                               <span class="icon-search"></span>-->
+<!--                           </button>-->
+<!--                        </span>-->
+<!--    </div>-->
+<!--</form>-->
+
+<form class="navbar-form" th:action="@{/}">
+    Filter Results:
     <div class="input-group col-lg-12">
-        <input name="searchtext" style="width:100%" value="" class="form-control" type="text"
-               placeholder="Search for your favorite course">
-        <span class="input-group-btn">
-                           <button class="btn btn-default" type="submit" id="addressSearch">
-                               <span class="icon-search"></span>
-                           </button>
-                        </span>
+    <input type="text" name="keyword" id="keyword" style="width:100%" th:value="${keyword}" placeholder="Search for your favorite course" required />
+    &nbsp;
+    <input type="submit" class="btn btn-primary" value="Search" />
+    &nbsp;
+    <input type="button" class="btn btn-danger" value="Clear" id="btnClear" onclick="clearSearch()" />
     </div>
 </form>
 <!--      declaration for the course cards-->
@@ -196,8 +207,26 @@ margin: 0;
 
 
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+
+
+       function clearSearch() {
+        window.location = "[[@{/}]]";
+    }
+</script>
+<!--commenting out bootstrap js link so that the clear button is functional for the search bar.
+ Because of this the navbar hamburger button is currently non-functional for this page unfortunately-->
+<!--        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
+<!--        crossorigin="anonymous"-->
+
+
+</script>
+
 </body>
 </html>

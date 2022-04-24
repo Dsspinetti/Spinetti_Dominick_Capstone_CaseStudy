@@ -8,6 +8,8 @@ public interface CourseService {
 
     List<Course> getAllCourses();
 
+    List<Course> listAll(String keyword);
+
     void saveCourse(Course course);
 
     Course getCourseById(long id);

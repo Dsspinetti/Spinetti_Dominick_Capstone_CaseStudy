@@ -36,6 +36,13 @@ public class CourseServiceImpl implements CourseService {
         return course;
     }
 
+    public List<Course> listAll(String keyword) {
+        if (keyword != null) {
+            return courseRepository.searchByName(keyword);
+        }
+        return courseRepository.findAll();
+    }
+
     @Override
     public void deleteCourseById(long id) {
         this.courseRepository.deleteById(id);

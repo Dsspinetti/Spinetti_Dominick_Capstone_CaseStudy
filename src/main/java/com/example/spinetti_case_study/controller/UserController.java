@@ -5,6 +5,7 @@ import com.example.spinetti_case_study.models.User;
 import com.example.spinetti_case_study.services.CourseService;
 import com.example.spinetti_case_study.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import java.security.Principal;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -37,9 +39,11 @@ public class UserController {
 
     //Mapping for main home page
     @GetMapping("/")
-    public String showHomeScreen(Model model) {
+    public String showHomeScreen(Model model, @Param("keyword") String keyword, Principal principal) {
         Course course = new Course();
-        model.addAttribute("listCourses", courseService.getAllCourses());
+        List<Course> courses = courseService.getAllCourses();
+        model.addAttribute("listCourses", courseService.listAll(keyword));
+        model.addAttribute("keyword", keyword);
         return "home_screen";
     }
 
