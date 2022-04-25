@@ -16,5 +16,4 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
     @Query(value = "SELECT * FROM course c WHERE c.course_name LIKE %?1%", nativeQuery = true)
     //make return value a list
     public List<Course> searchByName(String name);
-
 }
