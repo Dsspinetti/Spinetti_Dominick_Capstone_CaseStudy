@@ -17,6 +17,8 @@ While this has not been implemented yet, the end goal is to allow each user to a
  - [Development Process](#development-process)
  - [Technical Challenges](#technical-challenges)
  - [Future Implementations](#future-implementations)
+ - ![Link to wireframe](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Spinetti_Dominick_Wireframe.pdf)
+
  
  
 
@@ -46,9 +48,6 @@ While this has not been implemented yet, the end goal is to allow each user to a
 ![Main logo](https://user-images.githubusercontent.com/99349506/157073478-f3134db6-360d-4b10-97a5-04be09bdad55.PNG)
 
 
-
-![Link to wireframe](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Spinetti_Dominick_Wireframe.pdf)
-
 ## Technical Architecture
 
  - Technologies used
@@ -62,7 +61,7 @@ While this has not been implemented yet, the end goal is to allow each user to a
    - Git
    - Planning to implement mockito testing
   
-  ![Technical Architecture](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Technical%20Architecture.pdf)
+  [Technical Architecture](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Technical%20Architecture.pdf)
   
   ![Table Schema](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Table_Schema.png)
   
