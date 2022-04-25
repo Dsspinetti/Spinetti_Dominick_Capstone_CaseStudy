@@ -91,41 +91,57 @@
     </tr>
     </thead>
     <tbody>
+<!--    <tr>-->
+<!--        <td><img class="img-fluid" width="100%" height="100%" src="/Hole1.PNG" alt="Golf Course Photo"></td>-->
+<!--        <td  style="width: 75%"><p>-->
+<!--            Golf Manager is a web application that allows you to keep track of your golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--        </p></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><img class="img-fluid" width="100%" height="100%" src="/Hole1.PNG" alt="Golf Course Photo"></td>-->
+<!--        <td><p>-->
+<!--            Golf Manager is a web application that allows you to keep track of your golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--            This application is designed for golfers who want to keep track of their golfing career.-->
+<!--        </p></td>-->
+<!--    </tr>-->
+
     <tr>
         <td><img class="img-fluid" width="100%" height="100%" src="/Hole1.PNG" alt="Golf Course Photo"></td>
-        <td  style="width: 75%"><p>
-            Golf Manager is a web application that allows you to keep track of your golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-        </p></td>
+        <td th:text="${course.hole1Strategy}" style="width: 75%"></td>
     </tr>
     <tr>
         <td><img class="img-fluid" width="100%" height="100%" src="/Hole1.PNG" alt="Golf Course Photo"></td>
-        <td><p>
-            Golf Manager is a web application that allows you to keep track of your golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-            This application is designed for golfers who want to keep track of their golfing career.
-        </p></td>
+        <td th:text="${course.hole2Strategy}"></td>
+    </tr>
+    <tr>
+        <td><img class="img-fluid" width="100%" height="100%" src="/Hole1.PNG" alt="Golf Course Photo"></td>
+        <td th:text="${course.hole3Strategy}"></td>
     </tr>
     </tbody>
 </table>
 
+<!--add button for showing hole update form-->
+<!--<button type="button" th:href="@{/showFormForCourseStrategy/{id}(id=${course.id})" class="btn btn-primary" data-toggle="modal">-->
+<a th:href="@{/showFormForCourseStrategy/{id}(id=${course.id})}" class="btn btn-primary">Update</a>
 
 
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -134,7 +134,12 @@ password: password
 
 #### Update for 4/23/22 (90-95%)
  - Implemented search bar functionality for the home page.
- -  Still need to implement testing class for this custom query
+ - Still need to implement testing class for this custom query
+
+#### Update for 4/25/22 (95-100%)
+ - At this point the project is "complete" as far as the rubric requirements are concerned. There is a lot of polish work to be done and that is what I will continue to work on 
+ - Made a lot of changes to the course table. Rather than having a joined table to connect a course to its strategy, I just implemented the strategies into the course table itself to make changes easier.
+ - Added a form for updating a course's strategy information as well.
 
 
 

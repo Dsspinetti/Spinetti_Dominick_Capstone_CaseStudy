@@ -26,6 +26,15 @@ public class Course {
     @Column(name = "course_image")
     private String courseImage;
 
+    @Column(name = "hole1_strategy")
+    private String hole1Strategy;
+
+    @Column(name = "hole2_strategy")
+    private String hole2Strategy;
+
+    @Column(name = "hole3_strategy")
+    private String hole3Strategy;
+
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "course_list",
@@ -38,11 +47,35 @@ public class Course {
     public Course() {
     }
 
+    public String getHole2Strategy() {
+        return hole2Strategy;
+    }
+
+    public void setHole2Strategy(String hole2Strategy) {
+        this.hole2Strategy = hole2Strategy;
+    }
+
+    public String getHole3Strategy() {
+        return hole3Strategy;
+    }
+
+    public void setHole3Strategy(String hole3Strategy) {
+        this.hole3Strategy = hole3Strategy;
+    }
+
+    public String getHole1Strategy() {
+        return hole1Strategy;
+    }
+
+    public void setHole1Strategy(String hole1Strategy) {
+        this.hole1Strategy = hole1Strategy;
+    }
+
     public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

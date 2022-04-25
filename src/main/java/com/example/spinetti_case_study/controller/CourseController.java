@@ -2,6 +2,7 @@ package com.example.spinetti_case_study.controller;
 
 
 import com.example.spinetti_case_study.models.Course;
+import com.example.spinetti_case_study.models.User;
 import com.example.spinetti_case_study.services.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,9 +24,9 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @GetMapping("/showCourse")
-    public String showCourse(Model model) {
-        Course course = new Course();
+    @GetMapping("/showCourse/{id}")
+    public String showCourse(@PathVariable(value = "id") long id, Model model) {
+        Course course = courseService.getCourseById(id);
         model.addAttribute("course", course);
         return "course";
 
@@ -65,6 +66,13 @@ public class CourseController {
     public String deleteCourse(@PathVariable(value = "id") long id) {
         this.courseService.deleteCourseById(id);
         return "redirect:/";
+    }
+
+    @GetMapping("/showFormForCourseStrategy/{id}")
+    public String showFormForCourseStrategy(@PathVariable(value = "id") long id, Model model) {
+        Course course = courseService.getCourseById(id);
+        model.addAttribute("course", course);
+        return "hole_update_form";
     }
 
 

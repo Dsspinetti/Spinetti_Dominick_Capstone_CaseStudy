@@ -71,6 +71,32 @@ margin: 0;
             <label for="course_file">Course Photo:</label>
             <input type="text" th:field="*{courseImage}" class="form-control" id="course_file" name="course_file" placeholder="Enter image link from golf pass website. ex: https://golf-pass.brightspotcdn.com/06/30/2bbaccc3ba292b72075c1088e4c9/103419.jpg">
         </div>
+
+        <div class="form-group">
+            <label for="hole1Strategy">Hole 1 strategy:</label>
+            <textarea type="text" th:field="*{hole1Strategy}" class="form-control" id="hole1Strategy"
+                      rows="3"
+                      name="course_description" placeholder="Enter Hole 1 Strategy">
+                </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="hole2Strategy">Hole 2 strategy:</label>
+            <textarea type="text" th:field="*{hole2Strategy}" class="form-control" id="hole2Strategy"
+                      rows="3"
+                      name="course_description" placeholder="Enter Hole 2 Strategy">
+                </textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="hole3Strategy">Hole 3 strategy:</label>
+            <textarea type="text" th:field="*{hole3Strategy}" class="form-control" id="hole3Strategy"
+                      rows="3"
+                      name="course_description" placeholder="Enter Hole 3 Strategy">
+                </textarea>
+        </div>
+
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 <!--    <p class="text-center">-->
