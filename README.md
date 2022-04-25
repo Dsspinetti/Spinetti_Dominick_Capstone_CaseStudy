@@ -17,7 +17,7 @@ While this has not been implemented yet, the end goal is to allow each user to a
  - [Development Process](#development-process)
  - [Technical Challenges](#technical-challenges)
  - [Future Implementations](#future-implementations)
- - ![Link to wireframe](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Spinetti_Dominick_Wireframe.pdf)
+ - [Link to wireframe](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Spinetti_Dominick_Wireframe.pdf)
 
  
  
