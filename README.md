@@ -149,6 +149,7 @@ password: password
  - The second challenge that arose was the issue with the spring security. The original page with default user, admin, and super-admin gave no difficulty but implementing user registration added a few difficult hurdles to overcome due to changes needing to be made to the UserService and UserServiceImpl.
  - Had a lot of trouble adding functionality for adding a new question to the FAQ database and having it display on the FAQ page. (The solution was very simple...I had the model.addAttribute in the wrong mapping)
  - Not sure which method of taking an uploaded photo from a user and storing it into the database will work best.
+ - Had an issue with updating a form and it deleting all of the other information. The solution to this was to add all the other form elements to the update form in a hidden class so that they would fill with their old information and submit it again but this would not change the data.
 
 
 ## Future Implementations
