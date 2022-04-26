@@ -63,7 +63,7 @@ While this has not been implemented yet, the end goal is to allow each user to a
   
   [Technical Architecture](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Technical%20Architecture.pdf)
   
-  ![Table Schema](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/Table_Schema.png)
+  ![Table Schema](https://github.com/Dsspinetti/Spinetti_Dominick_Capstone_CaseStudy/blob/master/DBSchema.PNG)
   
 
 
